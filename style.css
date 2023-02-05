@@ -1,0 +1,103 @@
+/*
+Theme Name:   Ar-god
+Description:  Ensemble Ar-god wordpress theme
+Author:       Vidrik Toom Tabas
+Author URI:   https://github.com/vidriktt/ar-god
+Template:     twentytwentyone
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  ar-god
+*/
+
+@font-face {
+    font-family: MedievalSharp-Regular;
+    src: url('./assets/fonts/MedievalSharp/Medievalsharp-Regular.woff2') format('woff2'),
+        url('./assets/fonts/MedievalSharp/Medievalsharp-Regular.woff') format('woff'),
+        url('./assets/fonts/MedievalSharp/Medievalsharp-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nova_Cut-Regular;
+    src: url('assets/fonts/Nova_Cut/Novacut-Regular.woff2') format('woff2'),
+        url('assets/fonts/Nova_Cut/Novacut-Regular.woff') format('woff'),
+        url('assets/fonts/Nova_Cut/Novacut-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.site-title {
+    font-family: MedievalSharp-Regular;
+}
+
+.contact-info {
+    font-family: Nova_Cut-Regular;
+}
+
+@media only screen and (min-width: 822px) {
+    .site-header {
+        padding-top: calc(var(--global--spacing-vertical) / 0.75);
+    }
+}
+
+@media only screen and (min-width: 482px) {
+    .site-header {
+        padding-bottom: 0;
+    }
+}
+
+.site-header,
+.site-main,
+.widget-area,
+.site-footer {
+    padding-bottom: 0;
+}
+
+@media only screen and (min-width: 482px) {
+    .site-branding {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .site-logo {
+        display: none;
+    }
+
+    #masthead:before {
+        content: none;
+    }
+}
+
+.site-logo {
+    margin-right: 20px;
+}
+
+.singular .entry-header {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.site-footer {
+    border: none;
+}
+
+.no-widgets .site-footer {
+    margin-top: calc(var(--global--spacing-vertical));
+}
+
+.wpforms-form label {
+    font-weight: 400 !important;
+}
+
+.wpforms-form input[type=submit],
+.wpforms-form button[type=submit] {
+    background-color: #932621 !important;
+    color: white !important;
+    border: none !important;
+    font-family: Nova_Cut-Regular;
+}
