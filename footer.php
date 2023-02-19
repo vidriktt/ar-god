@@ -17,8 +17,6 @@
 </div><!-- #primary -->
 </div><!-- #content -->
 
-<?php get_template_part('template-parts/footer/footer-widgets'); ?>
-
 <footer id="colophon" class="site-footer">
 
     <?php if (has_nav_menu('footer')) : ?>
@@ -41,6 +39,8 @@
         </nav><!-- .footer-navigation -->
     <?php endif; ?>
 </footer><!-- #colophon -->
+
+<?php get_template_part('template-parts/footer/footer-widgets'); ?>
 
 </div><!-- #page -->
 
